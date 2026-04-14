@@ -702,10 +702,15 @@
             
             <div class="font-bold text-xl mb-1">WANT TO CREATE YOUR OWN WEBSITE?</div>
             <div class="text-sm opacity-90 mb-1">contact us:</div>
+            <button id="hide-dev-bar" class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-600 rounded-t-lg flex items-center justify-center hover:bg-purple-500 transition-colors z-10">
+                <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                </svg>
+            </button>
             <div class="font-semibold">
                 <a href="https://wa.me/6285814668168?text=Hai!%20PROMPT%20ONE%20VISUALS!%20bisakah%20bikinkan%20website%20untuk%20saya?" target="_blank" class="hover:underline">PROMPT ONE VISUALS</a>
                 <span class="mx-2">|</span>
-                <a href="mailto:senaprasena@gmail.com" class="hover:underline">senaprasena@gmail.com</a>
+                <a href="mailto:promptonevisuals@gmail.com" class="hover:underline">promptonevisuals@gmail.com</a>
             </div>
         </div>
     </div>
@@ -776,6 +781,12 @@
         // Hover reveal for developer bar
         document.getElementById('developer-bar').addEventListener('mouseenter', function() {
             this.classList.add('visible');
+        });
+
+        // Hide button functionality
+        document.getElementById('hide-dev-bar').addEventListener('click', function(e) {
+            e.stopPropagation();
+            document.getElementById('developer-bar').classList.remove('visible');
         });
     </script>
 </body>
