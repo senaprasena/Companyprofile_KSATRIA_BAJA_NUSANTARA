@@ -716,6 +716,9 @@
     </div>
 
     <script>
+        let lastScrollPosition = 0;
+        let devBarManuallyClosed = false;
+        
         // Mobile menu toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
             const menu = document.getElementById('mobile-menu');
@@ -766,16 +769,21 @@
                 nav.classList.add('bg-gray-900/95');
             }
             
-            // Developer bar reveal at bottom
+            // Developer bar reveal logic
             const developerBar = document.getElementById('developer-bar');
             const scrollPosition = window.innerHeight + window.scrollY;
             const bodyHeight = document.body.offsetHeight;
+            const currentScroll = window.scrollY;
+            const scrollingDown = currentScroll > lastScrollPosition;
             
-            if (scrollPosition >= bodyHeight - 200) {
+            if (scrollPosition >= bodyHeight - 200 && scrollingDown && !devBarManuallyClosed) {
                 developerBar.classList.add('visible');
-            } else {
+            } else if (scrollPosition < bodyHeight - 200) {
                 developerBar.classList.remove('visible');
+                devBarManuallyClosed = false;
             }
+            
+            lastScrollPosition = currentScroll;
         });
 
         // Hover reveal for developer bar
@@ -787,6 +795,7 @@
         document.getElementById('hide-dev-bar').addEventListener('click', function(e) {
             e.stopPropagation();
             document.getElementById('developer-bar').classList.remove('visible');
+            devBarManuallyClosed = true;
         });
     </script>
 </body>
