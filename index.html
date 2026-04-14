@@ -664,10 +664,10 @@
             top: -16px;
             left: 50%;
             transform: translateX(-50%);
-            width: 150px;
+            width: 420px;
             height: 16px;
             background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #7c3aed 100%);
-            clip-path: polygon(0 100%, 10% 0, 90% 0, 100% 100%);
+            clip-path: polygon(0 100%, 1% 0, 99% 0, 100% 100%);
             cursor: pointer;
             z-index: 1;
         }
@@ -744,7 +744,7 @@
             <svg id="dev-bar-arrow" class="w-4 h-4 text-white absolute left-1/2 top-0 transform -translate-x-1/2 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
             </svg>
-            <span id="dev-bar-text" class="text-white text-[10px] font-bold absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-[2px] tracking-wide">CONTACT US</span>
+            <span id="dev-bar-text" class="text-white text-[10px] font-bold absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-[2px] tracking-wide">WANT TO CREATE YOUR OWN WEBSITE?</span>
         </div>
         <div class="max-w-7xl mx-auto px-4 py-4 text-white text-center relative">
             <div class="sparkle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
@@ -905,7 +905,7 @@
 
         // Idle side developer panel logic
         let idleTimer;
-        const idleTimeout = 5000; // 5 seconds
+        const idleTimeout = 10000; // 10 seconds
         const developerSide = document.getElementById('developer-side');
         let devSideManuallyClosed = false;
 
