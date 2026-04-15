@@ -93,11 +93,15 @@
                         <span class="text-orange-500">K</span>SATRIA <span class="text-orange-500">B</span>AJA <span class="text-orange-500">N</span>USANTARA
                     </span>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium">Tentang</a>
-                    <a href="#services" class="text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium">Layanan</a>
-                    <a href="#projects" class="text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium">Proyek</a>
-                    <a href="#contact" class="text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium">Kontak</a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium" data-i18n="nav_about">Tentang</a>
+                    <a href="#services" class="text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium" data-i18n="nav_services">Layanan</a>
+                    <a href="#projects" class="text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium" data-i18n="nav_projects">Proyek</a>
+                    <a href="#contact" class="text-gray-300 hover:text-orange-500 transition-colors text-sm font-medium" data-i18n="nav_contact">Kontak</a>
+                    <div class="flex items-center gap-1 ml-4 border-l border-gray-700 pl-4">
+                        <button class="lang-btn px-2 py-1 rounded text-sm font-medium hover:bg-orange-500/20 transition-colors bg-orange-500 text-white" data-lang="id">ID</button>
+                        <button class="lang-btn px-2 py-1 rounded text-sm font-medium hover:bg-orange-500/20 transition-colors text-gray-400" data-lang="en">EN</button>
+                    </div>
                 </div>
                 <div class="md:hidden">
                     <button id="mobile-menu-btn" class="text-gray-300 hover:text-white">
@@ -110,10 +114,10 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
             <div class="px-4 py-3 space-y-3">
-                <a href="#about" class="block text-gray-300 hover:text-orange-500">Tentang</a>
-                <a href="#services" class="block text-gray-300 hover:text-orange-500">Layanan</a>
-                <a href="#projects" class="block text-gray-300 hover:text-orange-500">Proyek</a>
-                <a href="#contact" class="block text-gray-300 hover:text-orange-500">Kontak</a>
+                <a href="#about" class="block text-gray-300 hover:text-orange-500" data-i18n="nav_about">Tentang</a>
+                <a href="#services" class="block text-gray-300 hover:text-orange-500" data-i18n="nav_services">Layanan</a>
+                <a href="#projects" class="block text-gray-300 hover:text-orange-500" data-i18n="nav_projects">Proyek</a>
+                <a href="#contact" class="block text-gray-300 hover:text-orange-500" data-i18n="nav_contact">Kontak</a>
             </div>
         </div>
     </nav>
@@ -133,21 +137,21 @@
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
             <div class="max-w-3xl animate-fade-up">
                 <div class="mb-4">
-                    <span class="inline-block bg-orange-500/10 border border-orange-500/30 text-orange-400 px-4 py-1.5 rounded-full text-sm font-medium">
+                    <span class="inline-block bg-orange-500/10 border border-orange-500/30 text-orange-400 px-4 py-1.5 rounded-full text-sm font-medium" data-i18n="hero_badge">
                         Beroperasi Sejak 2015
                     </span>
                 </div>
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-                    Solusi Konstruksi Baja <span class="text-orange-500">Berkualitas Tinggi</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6" data-i18n="hero_title">
+                    Solusi Konstruksi Baja Berkualitas Tinggi
                 </h1>
-                <p class="text-xl text-gray-300 mb-10 leading-relaxed">
+                <p class="text-xl text-gray-300 mb-10 leading-relaxed" data-i18n="hero_description">
                     Menyediakan layanan fabrikasi dan konstruksi baja untuk proyek industri dan komersial di seluruh Indonesia. Struktur kuat, presisi tinggi, dan ketahanan terjamin.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact" class="btn-primary bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-center">
+                    <a href="#contact" class="btn-primary bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg text-center" data-i18n="hero_cta_primary">
                         Konsultasi Gratis
                     </a>
-                    <a href="#projects" class="border border-gray-500 hover:border-gray-400 text-white font-semibold px-8 py-4 rounded-lg text-center transition-colors">
+                    <a href="#projects" class="border border-gray-500 hover:border-gray-400 text-white font-semibold px-8 py-4 rounded-lg text-center transition-colors" data-i18n="hero_cta_secondary">
                         Lihat Proyek
                     </a>
                 </div>
@@ -168,27 +172,27 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="scroll-animate grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm">Tentang Kami</span>
+                    <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm" data-i18n="about_section_label">Tentang Kami</span>
                     <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Ksatria Baja Nusantara</h2>
-                    <p class="text-gray-300 mb-6 leading-relaxed">
+                    <p class="text-gray-300 mb-6 leading-relaxed" data-i18n="about_paragraph1">
                         Didirikan pada tahun 2015, Ksatria Baja Nusantara telah tumbuh menjadi salah satu perusahaan konstruksi baja terpercaya di Indonesia. Berlokasi di Bekasi, Jawa Barat, kami melayani proyek skala nasional dengan fokus pada kualitas, presisi, dan ketahanan.
                     </p>
-                    <p class="text-gray-300 mb-8 leading-relaxed">
+                    <p class="text-gray-300 mb-8 leading-relaxed" data-i18n="about_paragraph2">
                         Setiap proyek yang kami kerjakan didasarkan pada prinsip rekayasa yang solid dan standar keselamatan industri tertinggi.
                     </p>
                     
                     <div class="grid grid-cols-3 gap-6">
                         <div class="text-center">
                             <div class="text-3xl font-bold text-orange-500">9+</div>
-                            <div class="text-gray-400 text-sm">Tahun Pengalaman</div>
+                            <div class="text-gray-400 text-sm" data-i18n="stat_years">Tahun Pengalaman</div>
                         </div>
                         <div class="text-center">
                             <div class="text-3xl font-bold text-orange-500">120+</div>
-                            <div class="text-gray-400 text-sm">Proyek Selesai</div>
+                            <div class="text-gray-400 text-sm" data-i18n="stat_projects">Proyek Selesai</div>
                         </div>
                         <div class="text-center">
                             <div class="text-3xl font-bold text-orange-500">0</div>
-                            <div class="text-gray-400 text-sm">Insiden Keselamatan</div>
+                            <div class="text-gray-400 text-sm" data-i18n="stat_safety">Insiden Keselamatan</div>
                         </div>
                     </div>
                 </div>
@@ -204,18 +208,18 @@
                     <div class="grid grid-cols-3 gap-4 mt-6">
                         <div class="bg-gray-700/50 rounded-lg p-4 text-center">
                             <div class="text-2xl mb-2">🎯</div>
-                            <h3 class="font-semibold text-sm">Presisi</h3>
-                            <p class="text-xs text-gray-400 mt-1">Ketelitian tinggi di setiap detail</p>
+                            <h3 class="font-semibold text-sm" data-i18n="value_precision_title">Presisi</h3>
+                            <p class="text-xs text-gray-400 mt-1" data-i18n="value_precision_desc">Ketelitian tinggi di setiap detail</p>
                         </div>
                         <div class="bg-gray-700/50 rounded-lg p-4 text-center">
                             <div class="text-2xl mb-2">🤝</div>
-                            <h3 class="font-semibold text-sm">Integritas</h3>
-                            <p class="text-xs text-gray-400 mt-1">Kepercayaan adalah dasar</p>
+                            <h3 class="font-semibold text-sm" data-i18n="value_integrity_title">Integritas</h3>
+                            <p class="text-xs text-gray-400 mt-1" data-i18n="value_integrity_desc">Kepercayaan adalah dasar</p>
                         </div>
                         <div class="bg-gray-700/50 rounded-lg p-4 text-center">
                             <div class="text-2xl mb-2">🛡️</div>
-                            <h3 class="font-semibold text-sm">Ketahanan</h3>
-                            <p class="text-xs text-gray-400 mt-1">Struktur bertahan puluhan tahun</p>
+                            <h3 class="font-semibold text-sm" data-i18n="value_durability_title">Ketahanan</h3>
+                            <p class="text-xs text-gray-400 mt-1" data-i18n="value_durability_desc">Struktur bertahan puluhan tahun</p>
                         </div>
                     </div>
                 </div>
@@ -227,8 +231,8 @@
     <section id="services" class="py-24 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 scroll-animate">
-                <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm">Layanan Kami</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">Solusi Konstruksi Lengkap</h2>
+                <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm" data-i18n="services_section_label">Layanan Kami</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2" data-i18n="services_title">Solusi Konstruksi Lengkap</h2>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -238,8 +242,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Fabrikasi Struktur Baja</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Fabrikasi balok baja, kolom, dan komponen struktur sesuai spesifikasi proyek dengan toleransi presisi tinggi.</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="service1_title">Fabrikasi Struktur Baja</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed" data-i18n="service1_desc">Fabrikasi balok baja, kolom, dan komponen struktur sesuai spesifikasi proyek dengan toleransi presisi tinggi.</p>
                 </div>
                 
                 <div class="card-hover scroll-animate bg-gray-800 rounded-xl p-6 border border-gray-700">
@@ -248,8 +252,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Konstruksi Bangunan Industri</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Pembangunan gudang, pabrik, dan fasilitas industri dengan sistem konstruksi baja yang efisien dan cepat.</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="service2_title">Konstruksi Bangunan Industri</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed" data-i18n="service2_desc">Pembangunan gudang, pabrik, dan fasilitas industri dengan sistem konstruksi baja yang efisien dan cepat.</p>
                 </div>
                 
                 <div class="card-hover scroll-animate bg-gray-800 rounded-xl p-6 border border-gray-700">
@@ -258,8 +262,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Renovasi & Penguatan</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Perbaikan dan penguatan struktur bangunan eksisting untuk meningkatkan kapasitas beban dan umur bangunan.</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="service3_title">Renovasi & Penguatan</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed" data-i18n="service3_desc">Perbaikan dan penguatan struktur bangunan eksisting untuk meningkatkan kapasitas beban dan umur bangunan.</p>
                 </div>
                 
                 <div class="card-hover scroll-animate bg-gray-800 rounded-xl p-6 border border-gray-700">
@@ -268,8 +272,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Desain & Konsultasi</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Layanan desain teknik struktur baja menggunakan perangkat lunak CAD dan analisis beban profesional.</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="service4_title">Desain & Konsultasi</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed" data-i18n="service4_desc">Layanan desain teknik struktur baja menggunakan perangkat lunak CAD dan analisis beban profesional.</p>
                 </div>
             </div>
         </div>
@@ -279,8 +283,8 @@
     <section id="projects" class="py-24 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 scroll-animate">
-                <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm">Portofolio</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">Proyek Yang Telah Kami Selesaikan</h2>
+                <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm" data-i18n="projects_section_label">Portofolio</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2" data-i18n="projects_title">Proyek Yang Telah Kami Selesaikan</h2>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
@@ -293,13 +297,13 @@
                     >
                     <div class="p-6">
                         <div class="flex items-center gap-2 mb-3">
-                            <span class="bg-green-500/10 text-green-400 text-xs font-medium px-2.5 py-1 rounded-full">Selesai</span>
+                            <span class="bg-green-500/10 text-green-400 text-xs font-medium px-2.5 py-1 rounded-full" data-i18n="project_completed">Selesai</span>
                             <span class="text-gray-500 text-xs">2023</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Gudang Logistik Bekasi</h3>
-                        <p class="text-gray-400 text-sm mb-4">Konstruksi gudang logistik 10.000 m² dengan struktur baja ringan yang tahan gempa.</p>
+                        <h3 class="text-xl font-bold mb-2" data-i18n="project1_title">Gudang Logistik Bekasi</h3>
+                        <p class="text-gray-400 text-sm mb-4" data-i18n="project1_desc">Konstruksi gudang logistik 10.000 m² dengan struktur baja ringan yang tahan gempa.</p>
                         <div class="flex items-center text-orange-500 text-sm font-medium">
-                            <span>Kapasitas meningkat 35%</span>
+                            <span data-i18n="project1_highlight">Kapasitas meningkat 35%</span>
                             <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                             </svg>
@@ -316,13 +320,13 @@
                     >
                     <div class="p-6">
                         <div class="flex items-center gap-2 mb-3">
-                            <span class="bg-green-500/10 text-green-400 text-xs font-medium px-2.5 py-1 rounded-full">Selesai</span>
+                            <span class="bg-green-500/10 text-green-400 text-xs font-medium px-2.5 py-1 rounded-full" data-i18n="project_completed">Selesai</span>
                             <span class="text-gray-500 text-xs">2022</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Pabrik Manufaktur Karawang</h3>
-                        <p class="text-gray-400 text-sm mb-4">Penguatan struktur lantai pabrik untuk penambahan beban mesin produksi seberat 120 ton.</p>
+                        <h3 class="text-xl font-bold mb-2" data-i18n="project2_title">Pabrik Manufaktur Karawang</h3>
+                        <p class="text-gray-400 text-sm mb-4" data-i18n="project2_desc">Penguatan struktur lantai pabrik untuk penambahan beban mesin produksi seberat 120 ton.</p>
                         <div class="flex items-center text-orange-500 text-sm font-medium">
-                            <span>Zero downtime operasional</span>
+                            <span data-i18n="project2_highlight">Zero downtime operasional</span>
                             <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                             </svg>
@@ -339,13 +343,13 @@
                     >
                     <div class="p-6">
                         <div class="flex items-center gap-2 mb-3">
-                            <span class="bg-green-500/10 text-green-400 text-xs font-medium px-2.5 py-1 rounded-full">Selesai</span>
+                            <span class="bg-green-500/10 text-green-400 text-xs font-medium px-2.5 py-1 rounded-full" data-i18n="project_completed">Selesai</span>
                             <span class="text-gray-500 text-xs">2024</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Kanopi Komersial Jakarta</h3>
-                        <p class="text-gray-400 text-sm mb-4">Desain dan konstruksi kanopi parkir area komersial dengan desain modern dan tahan cuaca.</p>
+                        <h3 class="text-xl font-bold mb-2" data-i18n="project3_title">Kanopi Komersial Jakarta</h3>
+                        <p class="text-gray-400 text-sm mb-4" data-i18n="project3_desc">Desain dan konstruksi kanopi parkir area komersial dengan desain modern dan tahan cuaca.</p>
                         <div class="flex items-center text-orange-500 text-sm font-medium">
-                            <span>Umur pakai 25+ tahun</span>
+                            <span data-i18n="project3_highlight">Umur pakai 25+ tahun</span>
                             <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                             </svg>
@@ -360,8 +364,8 @@
     <section class="py-24 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 scroll-animate">
-                <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm">Proses Kerja</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">Bagaimana Kami Bekerja</h2>
+                <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm" data-i18n="workflow_section_label">Proses Kerja</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2" data-i18n="workflow_title">Bagaimana Kami Bekerja</h2>
             </div>
             
             <div class="relative">
@@ -371,40 +375,40 @@
                     <div class="scroll-animate relative">
                         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 h-full">
                             <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto md:mx-0">1</div>
-                            <h3 class="font-bold text-lg mb-2">Konsultasi & Survey</h3>
-                            <p class="text-gray-400 text-sm">Kunjungan lokasi dan analisis kebutuhan proyek secara detail.</p>
+                             <h3 class="font-bold text-lg mb-2" data-i18n="workflow1_title">Konsultasi & Survey</h3>
+                             <p class="text-gray-400 text-sm" data-i18n="workflow1_desc">Kunjungan lokasi dan analisis kebutuhan proyek secara detail.</p>
                         </div>
                     </div>
                     
                     <div class="scroll-animate relative">
                         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 h-full">
                             <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto md:mx-0">2</div>
-                            <h3 class="font-bold text-lg mb-2">Desain Teknik</h3>
-                            <p class="text-gray-400 text-sm">Pembuatan gambar desain dan perhitungan struktur dengan CAD.</p>
+                             <h3 class="font-bold text-lg mb-2" data-i18n="workflow2_title">Desain Teknik</h3>
+                             <p class="text-gray-400 text-sm" data-i18n="workflow2_desc">Pembuatan gambar desain dan perhitungan struktur dengan CAD.</p>
                         </div>
                     </div>
                     
                     <div class="scroll-animate relative">
                         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 h-full">
                             <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto md:mx-0">3</div>
-                            <h3 class="font-bold text-lg mb-2">Fabrikasi</h3>
-                            <p class="text-gray-400 text-sm">Pemotongan, pengelasan, dan finishing komponen di workshop.</p>
+                             <h3 class="font-bold text-lg mb-2" data-i18n="workflow3_title">Fabrikasi</h3>
+                             <p class="text-gray-400 text-sm" data-i18n="workflow3_desc">Pemotongan, pengelasan, dan finishing komponen di workshop.</p>
                         </div>
                     </div>
                     
                     <div class="scroll-animate relative">
                         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 h-full">
                             <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto md:mx-0">4</div>
-                            <h3 class="font-bold text-lg mb-2">Instalasi</h3>
-                            <p class="text-gray-400 text-sm">Pemasangan struktur di lokasi dengan tim profesional.</p>
+                             <h3 class="font-bold text-lg mb-2" data-i18n="workflow4_title">Instalasi</h3>
+                             <p class="text-gray-400 text-sm" data-i18n="workflow4_desc">Pemasangan struktur di lokasi dengan tim profesional.</p>
                         </div>
                     </div>
                     
                     <div class="scroll-animate relative">
                         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 h-full">
                             <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mb-4 mx-auto md:mx-0">5</div>
-                            <h3 class="font-bold text-lg mb-2">Quality Check</h3>
-                            <p class="text-gray-400 text-sm">Inspeksi akhir dan penyerahan proyek dengan garansi.</p>
+                             <h3 class="font-bold text-lg mb-2" data-i18n="workflow5_title">Quality Check</h3>
+                             <p class="text-gray-400 text-sm" data-i18n="workflow5_desc">Inspeksi akhir dan penyerahan proyek dengan garansi.</p>
                         </div>
                     </div>
                 </div>
@@ -416,8 +420,8 @@
     <section class="py-24 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 scroll-animate">
-                <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm">Keunggulan</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">Mengapa Memilih Kami</h2>
+                <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm" data-i18n="advantages_section_label">Keunggulan</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2" data-i18n="advantages_title">Mengapa Memilih Kami</h2>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -427,8 +431,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
                         </svg>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Mesin Modern</h3>
-                    <p class="text-gray-400 text-sm">Menggunakan peralatan fabrikasi CNC untuk presisi tertinggi.</p>
+                    <h3 class="font-bold text-lg mb-2" data-i18n="adv1_title">Mesin Modern</h3>
+                    <p class="text-gray-400 text-sm" data-i18n="adv1_desc">Menggunakan peralatan fabrikasi CNC untuk presisi tertinggi.</p>
                 </div>
                 
                 <div class="scroll-animate text-center">
@@ -437,8 +441,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Desain CAD</h3>
-                    <p class="text-gray-400 text-sm">Perencanaan struktur dengan software teknik profesional.</p>
+                    <h3 class="font-bold text-lg mb-2" data-i18n="adv2_title">Desain CAD</h3>
+                    <p class="text-gray-400 text-sm" data-i18n="adv2_desc">Perencanaan struktur dengan software teknik profesional.</p>
                 </div>
                 
                 <div class="scroll-animate text-center">
@@ -447,8 +451,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                         </svg>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Insinyur Berpengalaman</h3>
-                    <p class="text-gray-400 text-sm">Tim dengan sertifikasi dan pengalaman lebih dari 10 tahun.</p>
+                    <h3 class="font-bold text-lg mb-2" data-i18n="adv3_title">Insinyur Berpengalaman</h3>
+                    <p class="text-gray-400 text-sm" data-i18n="adv3_desc">Tim dengan sertifikasi dan pengalaman lebih dari 10 tahun.</p>
                 </div>
                 
                 <div class="scroll-animate text-center">
@@ -457,8 +461,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Kontrol Kualitas Ketat</h3>
-                    <p class="text-gray-400 text-sm">Setiap komponen melewati 3 tahap inspeksi sebelum dipasang.</p>
+                    <h3 class="font-bold text-lg mb-2" data-i18n="adv4_title">Kontrol Kualitas Ketat</h3>
+                    <p class="text-gray-400 text-sm" data-i18n="adv4_desc">Setiap komponen melewati 3 tahap inspeksi sebelum dipasang.</p>
                 </div>
             </div>
         </div>
@@ -468,8 +472,8 @@
     <section class="py-24 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 scroll-animate">
-                <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm">Testimoni</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">Apa Kata Klien Kami</h2>
+                <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm" data-i18n="testimonials_label">Testimoni</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2" data-i18n="testimonials_title">Apa Kata Klien Kami</h2>
             </div>
             
             <div class="grid md:grid-cols-3 gap-6">
@@ -481,9 +485,9 @@
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     </div>
-                    <p class="text-gray-300 mb-4 italic">"Proyek gudang kami selesai 2 minggu lebih cepat dari jadwal. Kualitas struktur sangat memuaskan dan tim sangat profesional."</p>
-                    <div class="font-semibold">Budi Santoso</div>
-                    <div class="text-gray-500 text-sm">Direktur Logistik Nusantara</div>
+                    <p class="text-gray-300 mb-4 italic" data-i18n="testimonial1_text">"Proyek gudang kami selesai 2 minggu lebih cepat dari jadwal. Kualitas struktur sangat memuaskan dan tim sangat profesional."</p>
+                    <div class="font-semibold" data-i18n="testimonial1_name">Budi Santoso</div>
+                    <div class="text-gray-500 text-sm" data-i18n="testimonial1_position">Direktur Logistik Nusantara</div>
                 </div>
                 
                 <div class="scroll-animate bg-gray-800 rounded-xl p-6 border border-gray-700">
@@ -494,9 +498,9 @@
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     </div>
-                    <p class="text-gray-300 mb-4 italic">"Penguatan struktur pabrik kami berjalan tanpa menghentikan produksi. Sangat profesional dan memahami kebutuhan industri."</p>
-                    <div class="font-semibold">Siti Rahayu</div>
-                    <div class="text-gray-500 text-sm">Manajer Pabrik Multi Manufaktur</div>
+                    <p class="text-gray-300 mb-4 italic" data-i18n="testimonial2_text">"Penguatan struktur pabrik kami berjalan tanpa menghentikan produksi. Sangat profesional dan memahami kebutuhan industri."</p>
+                    <div class="font-semibold" data-i18n="testimonial2_name">Siti Rahayu</div>
+                    <div class="text-gray-500 text-sm" data-i18n="testimonial2_position">Manajer Pabrik Multi Manufaktur</div>
                 </div>
                 
                 <div class="scroll-animate bg-gray-800 rounded-xl p-6 border border-gray-700">
@@ -507,9 +511,9 @@
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     </div>
-                    <p class="text-gray-300 mb-4 italic">"Desain kanopi yang dibuat sangat sesuai dengan konsep bangunan kami. Pengerjaan rapi dan on time. Sangat direkomendasikan."</p>
-                    <div class="font-semibold">Andi Pratama</div>
-                    <div class="text-gray-500 text-sm">Pemilik Gedung Komersial Jakarta</div>
+                    <p class="text-gray-300 mb-4 italic" data-i18n="testimonial3_text">"Desain kanopi yang dibuat sangat sesuai dengan konsep bangunan kami. Pengerjaan rapi dan on time. Sangat direkomendasikan."</p>
+                    <div class="font-semibold" data-i18n="testimonial3_name">Andi Pratama</div>
+                    <div class="text-gray-500 text-sm" data-i18n="testimonial3_position">Pemilik Gedung Komersial Jakarta</div>
                 </div>
             </div>
         </div>
@@ -520,9 +524,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12">
                 <div class="scroll-animate">
-                    <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm">Hubungi Kami</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Siap Membangun Proyek Anda?</h2>
-                    <p class="text-gray-300 mb-8 leading-relaxed">
+                    <span class="text-orange-500 font-semibold uppercase tracking-wider text-sm" data-i18n="contact_section_label">Hubungi Kami</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6" data-i18n="contact_title">Siap Membangun Proyek Anda?</h2>
+                    <p class="text-gray-300 mb-8 leading-relaxed" data-i18n="contact_description">
                         Konsultasikan proyek konstruksi baja Anda dengan tim ahli kami. Kami akan memberikan penawaran terbaik dan solusi yang sesuai dengan kebutuhan Anda.
                     </p>
                     
@@ -534,7 +538,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <div class="font-semibold">Telepon</div>
+                                 <div class="font-semibold" data-i18n="contact_phone_label">Telepon</div>
                                 <div class="text-gray-400 text-lg">022 57287422252</div>
                             </div>
                         </div>
@@ -547,7 +551,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <div class="font-semibold">Alamat</div>
+                                 <div class="font-semibold" data-i18n="contact_address_label">Alamat</div>
                                 <div class="text-gray-400">Jl. Industri Raya No. 123, Bekasi, Jawa Barat 17111</div>
                             </div>
                         </div>
@@ -559,8 +563,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <div class="font-semibold">Waktu Respon</div>
-                                <div class="text-gray-400">Kami akan menghubungi Anda dalam 24 jam</div>
+                                <div class="font-semibold" data-i18n="contact_response_label">Waktu Respon</div>
+                                <div class="text-gray-400" data-i18n="contact_response_text">Kami akan menghubungi Anda dalam 24 jam</div>
                             </div>
                         </div>
                     </div>
@@ -569,7 +573,7 @@
                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                         </svg>
-                        Hubungi via WhatsApp
+                        <span data-i18n="contact_cta_whatsapp">Hubungi via WhatsApp</span>
                     </a>
                 </div>
                 
@@ -577,28 +581,28 @@
                     <form class="bg-gray-900 rounded-xl p-8 border border-gray-700">
                         <div class="space-y-6">
                             <div>
-                                <label class="block text-sm font-medium text-gray-300 mb-2">Nama Lengkap</label>
+                                <label class="block text-sm font-medium text-gray-300 mb-2" data-i18n="contact_label_name">Nama Lengkap</label>
                                 <input type="text" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500 transition-colors" placeholder="Masukkan nama Anda">
                             </div>
                             
                             <div>
-                                <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                                <label class="block text-sm font-medium text-gray-300 mb-2" data-i18n="contact_label_email">Email</label>
                                 <input type="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500 transition-colors" placeholder="email@contoh.com">
                             </div>
                             
                             <div>
-                                <label class="block text-sm font-medium text-gray-300 mb-2">Nomor Telepon</label>
+                                <label class="block text-sm font-medium text-gray-300 mb-2" data-i18n="contact_label_phone">Nomor Telepon</label>
                                 <input type="tel" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500 transition-colors" placeholder="081234567890">
                             </div>
                             
                             <div>
-                                <label class="block text-sm font-medium text-gray-300 mb-2">Detail Proyek</label>
-                                <textarea rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500 transition-colors resize-none" placeholder="Jelaskan tentang proyek yang ingin Anda bangun..."></textarea>
+                                <label class="block text-sm font-medium text-gray-300 mb-2" data-i18n="contact_label_message">Detail Proyek</label>
+                                <textarea rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500 transition-colors resize-none" placeholder="" data-i18n="contact_placeholder_message"></textarea>
                             </div>
                             
-                            <button type="submit" class="btn-primary w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 rounded-lg">
-                                Kirim Permintaan Konsultasi
-                            </button>
+            <button type="submit" class="btn-primary w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 rounded-lg" data-i18n="contact_submit">
+                Kirim Permintaan Konsultasi
+            </button>
                         </div>
                     </form>
                 </div>
@@ -614,24 +618,24 @@
                     <div class="text-xl font-bold mb-4">
                         <span class="text-orange-500">K</span>SATRIA <span class="text-orange-500">B</span>AJA <span class="text-orange-500">N</span>USANTARA
                     </div>
-                    <p class="text-gray-400 text-sm mb-4 max-w-md">
+                    <p class="text-gray-400 text-sm mb-4 max-w-md" data-i18n="footer_description">
                         Perusahaan konstruksi baja profesional yang menyediakan solusi fabrikasi dan pembangunan struktur untuk proyek industri dan komersial di seluruh Indonesia.
                     </p>
-                    <p class="text-gray-500 text-sm">© 2026 Ksatria Baja Nusantara. Seluruh hak cipta dilindungi.</p>
+                    <p class="text-gray-500 text-sm" data-i18n="footer_copyright">© 2026 Ksatria Baja Nusantara. Seluruh hak cipta dilindungi.</p>
                 </div>
                 
                 <div>
-                    <h4 class="font-semibold mb-4">Navigasi</h4>
+                    <h4 class="font-semibold mb-4" data-i18n="footer_nav">Navigasi</h4>
                     <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#about" class="hover:text-orange-500 transition-colors">Tentang Kami</a></li>
-                        <li><a href="#services" class="hover:text-orange-500 transition-colors">Layanan</a></li>
-                        <li><a href="#projects" class="hover:text-orange-500 transition-colors">Proyek</a></li>
-                        <li><a href="#contact" class="hover:text-orange-500 transition-colors">Kontak</a></li>
+                        <li><a href="#about" class="hover:text-orange-500 transition-colors" data-i18n="about_section_label">Tentang Kami</a></li>
+                        <li><a href="#services" class="hover:text-orange-500 transition-colors" data-i18n="nav_services">Layanan</a></li>
+                        <li><a href="#projects" class="hover:text-orange-500 transition-colors" data-i18n="nav_projects">Proyek</a></li>
+                        <li><a href="#contact" class="hover:text-orange-500 transition-colors" data-i18n="nav_contact">Kontak</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <h4 class="font-semibold mb-4" data-i18n="footer_contact">Kontak</h4>
                     <ul class="space-y-2 text-sm text-gray-400">
                         <li>022 57287422252</li>
                         <li>info@ksatriabaja.co.id</li>
@@ -788,6 +792,135 @@
     </div>
 
     <script>
+        // ==============================================
+        // BILINGUAL TRANSLATION SYSTEM
+        // ==============================================
+        const TEXT = {
+            nav_about: { id: "Tentang", en: "About" },
+            nav_services: { id: "Layanan", en: "Services" },
+            nav_projects: { id: "Proyek", en: "Projects" },
+            nav_contact: { id: "Kontak", en: "Contact" },
+            
+            hero_badge: { id: "Beroperasi Sejak 2015", en: "Operating Since 2015" },
+            hero_title: { id: "Solusi Konstruksi Baja Berkualitas Tinggi", en: "High-Quality Steel Construction Solutions" },
+            hero_description: { id: "Menyediakan layanan fabrikasi dan konstruksi baja untuk proyek industri dan komersial di seluruh Indonesia. Struktur kuat, presisi tinggi, dan ketahanan terjamin.", en: "Providing steel fabrication and construction services for industrial and commercial projects across Indonesia. Strong structures, high precision, and guaranteed durability." },
+            hero_cta_primary: { id: "Konsultasi Gratis", en: "Free Consultation" },
+            hero_cta_secondary: { id: "Lihat Proyek", en: "View Projects" },
+            
+            about_section_label: { id: "Tentang Kami", en: "About Us" },
+            about_paragraph1: { id: "Didirikan pada tahun 2015, Ksatria Baja Nusantara telah tumbuh menjadi salah satu perusahaan konstruksi baja terpercaya di Indonesia. Berlokasi di Bekasi, Jawa Barat, kami melayani proyek skala nasional dengan fokus pada kualitas, presisi, dan ketahanan.", en: "Established in 2015, Ksatria Baja Nusantara has grown to become one of the most trusted steel construction companies in Indonesia. Located in Bekasi, West Java, we serve national scale projects with focus on quality, precision, and durability." },
+            about_paragraph2: { id: "Setiap proyek yang kami kerjakan didasarkan pada prinsip rekayasa yang solid dan standar keselamatan industri tertinggi.", en: "Every project we undertake is based on solid engineering principles and the highest industry safety standards." },
+            stat_years: { id: "Tahun Pengalaman", en: "Years Experience" },
+            stat_projects: { id: "Proyek Selesai", en: "Completed Projects" },
+            stat_safety: { id: "Insiden Keselamatan", en: "Safety Incidents" },
+            
+            value_precision_title: { id: "Presisi", en: "Precision" },
+            value_precision_desc: { id: "Ketelitian tinggi di setiap detail", en: "High accuracy in every detail" },
+            value_integrity_title: { id: "Integritas", en: "Integrity" },
+            value_integrity_desc: { id: "Kepercayaan adalah dasar", en: "Trust is our foundation" },
+            value_durability_title: { id: "Ketahanan", en: "Durability" },
+            value_durability_desc: { id: "Struktur bertahan puluhan tahun", en: "Structures last for decades" },
+            
+            services_section_label: { id: "Layanan Kami", en: "Our Services" },
+            services_title: { id: "Solusi Konstruksi Lengkap", en: "Complete Construction Solutions" },
+            
+            service1_title: { id: "Fabrikasi Struktur Baja", en: "Steel Structure Fabrication" },
+            service1_desc: { id: "Fabrikasi balok baja, kolom, dan komponen struktur sesuai spesifikasi proyek dengan toleransi presisi tinggi.", en: "Fabrication of steel beams, columns, and structural components according to project specifications with high precision tolerance." },
+            service2_title: { id: "Konstruksi Bangunan Industri", en: "Industrial Building Construction" },
+            service2_desc: { id: "Pembangunan gudang, pabrik, dan fasilitas industri dengan sistem konstruksi baja yang efisien dan cepat.", en: "Construction of warehouses, factories, and industrial facilities with efficient and fast steel construction systems." },
+            service3_title: { id: "Renovasi & Penguatan", en: "Renovation & Reinforcement" },
+            service3_desc: { id: "Perbaikan dan penguatan struktur bangunan eksisting untuk meningkatkan kapasitas beban dan umur bangunan.", en: "Repair and reinforcement of existing building structures to increase load capacity and building lifespan." },
+            service4_title: { id: "Desain & Konsultasi", en: "Design & Consultation" },
+            service4_desc: { id: "Layanan desain teknik struktur baja menggunakan perangkat lunak CAD dan analisis beban profesional.", en: "Steel structure engineering design services using CAD software and professional load analysis." },
+
+            testimonial1_text: { id: "Proyek gudang kami selesai 2 minggu lebih cepat dari jadwal. Kualitas struktur sangat memuaskan dan tim sangat profesional.", en: "Our warehouse project was completed 2 weeks ahead of schedule. The structure quality is very satisfying and the team is very professional." },
+            testimonial1_name: { id: "Budi Santoso", en: "Budi Santoso" },
+            testimonial1_position: { id: "Direktur Logistik Nusantara", en: "Director, Nusantara Logistics" },
+            testimonial2_text: { id: "Penguatan struktur pabrik kami berjalan tanpa menghentikan produksi. Sangat profesional dan memahami kebutuhan industri.", en: "Our factory structure reinforcement was done without stopping production. Very professional and understands industrial needs." },
+            testimonial2_name: { id: "Siti Rahayu", en: "Siti Rahayu" },
+            testimonial2_position: { id: "Manajer Pabrik Multi Manufaktur", en: "Factory Manager, Multi Manufacturing" },
+            testimonial3_text: { id: "Desain kanopi yang dibuat sangat sesuai dengan konsep bangunan kami. Pengerjaan rapi dan on time. Sangat direkomendasikan.", en: "The canopy design matches our building concept perfectly. Work is neat and on time. Highly recommended." },
+            testimonial3_name: { id: "Andi Pratama", en: "Andi Pratama" },
+            testimonial3_position: { id: "Pemilik Gedung Komersial Jakarta", en: "Owner, Jakarta Commercial Building" },
+
+            projects_section_label: { id: "Portofolio", en: "Portfolio" },
+            projects_title: { id: "Proyek Yang Telah Kami Selesaikan", en: "Projects We Have Completed" },
+            project_completed: { id: "Selesai", en: "Completed" },
+            project1_title: { id: "Gudang Logistik Bekasi", en: "Bekasi Logistics Warehouse" },
+            project1_desc: { id: "Konstruksi gudang logistik 10.000 m² dengan struktur baja ringan yang tahan gempa.", en: "Construction of 10,000 m² logistics warehouse with earthquake resistant light steel structure." },
+            project1_highlight: { id: "Kapasitas meningkat 35%", en: "35% capacity increase" },
+            project2_title: { id: "Pabrik Manufaktur Karawang", en: "Karawang Manufacturing Plant" },
+            project2_desc: { id: "Penguatan struktur lantai pabrik untuk penambahan beban mesin produksi seberat 120 ton.", en: "Factory floor structure reinforcement for additional 120 ton production machine load." },
+            project2_highlight: { id: "Zero downtime operasional", en: "Zero operational downtime" },
+            project3_title: { id: "Kanopi Komersial Jakarta", en: "Jakarta Commercial Canopy" },
+            project3_desc: { id: "Desain dan konstruksi kanopi parkir area komersial dengan desain modern dan tahan cuaca.", en: "Design and construction of commercial area parking canopy with modern design and weather resistance." },
+            project3_highlight: { id: "Umur pakai 25+ tahun", en: "25+ year lifespan" },
+            
+            workflow_section_label: { id: "Proses Kerja", en: "Work Process" },
+            workflow_title: { id: "Bagaimana Kami Bekerja", en: "How We Work" },
+            workflow1_title: { id: "Konsultasi & Survey", en: "Consultation & Survey" },
+            workflow1_desc: { id: "Kunjungan lokasi dan analisis kebutuhan proyek secara detail.", en: "Site visit and detailed project requirements analysis." },
+            workflow2_title: { id: "Desain Teknik", en: "Engineering Design" },
+            workflow2_desc: { id: "Pembuatan gambar desain dan perhitungan struktur dengan CAD.", en: "Design drawing creation and structural calculation with CAD." },
+            workflow3_title: { id: "Fabrikasi", en: "Fabrication" },
+            workflow3_desc: { id: "Pemotongan, pengelasan, dan finishing komponen di workshop.", en: "Cutting, welding, and component finishing in workshop." },
+            workflow4_title: { id: "Instalasi", en: "Installation" },
+            workflow4_desc: { id: "Pemasangan struktur di lokasi dengan tim profesional.", en: "On-site structure installation with professional team." },
+            workflow5_title: { id: "Quality Check", en: "Quality Check" },
+            workflow5_desc: { id: "Inspeksi akhir dan penyerahan proyek dengan garansi.", en: "Final inspection and project handover with warranty." },
+            
+            advantages_section_label: { id: "Keunggulan", en: "Advantages" },
+            advantages_title: { id: "Mengapa Memilih Kami", en: "Why Choose Us" },
+            adv1_title: { id: "Mesin Modern", en: "Modern Machinery" },
+            adv1_desc: { id: "Menggunakan peralatan fabrikasi CNC untuk presisi tertinggi.", en: "Using CNC fabrication equipment for highest precision." },
+            adv2_title: { id: "Tim Berpengalaman", en: "Experienced Team" },
+            adv2_desc: { id: "Tim teknisi dengan pengalaman lebih dari 10 tahun di industri konstruksi.", en: "Technician team with over 10 years experience in construction industry." },
+            adv3_title: { id: "Garansi 5 Tahun", en: "5 Year Warranty" },
+            adv3_desc: { id: "Setiap proyek mendapatkan garansi struktur penuh selama 5 tahun.", en: "Every project comes with full 5 year structural warranty." },
+            adv4_title: { id: "Harga Kompetitif", en: "Competitive Pricing" },
+            adv4_desc: { id: "Harga transparan tanpa biaya tersembunyi dengan kualitas premium.", en: "Transparent pricing with no hidden fees and premium quality." },
+            testimonials_label: { id: "Testimoni Klien", en: "Client Testimonials" },
+            testimonials_title: { id: "Apa Kata Klien Kami", en: "What Our Clients Say" },
+            footer_nav: { id: "Navigasi", en: "Navigation" },
+            footer_contact: { id: "Kontak", en: "Contact" },
+            footer_description: { id: "Perusahaan konstruksi baja profesional yang menyediakan solusi fabrikasi dan pembangunan struktur untuk proyek industri dan komersial di seluruh Indonesia.", en: "Professional steel construction company providing fabrication and structure construction solutions for industrial and commercial projects across Indonesia." },
+            contact_section_label: { id: "Hubungi Kami", en: "Contact Us" },
+            contact_cta_whatsapp: { id: "Hubungi via WhatsApp", en: "Contact via WhatsApp" },
+            contact_title: { id: "Siap Membangun Proyek Anda?", en: "Ready To Build Your Project?" },
+            contact_description: { id: "Konsultasikan proyek konstruksi baja Anda dengan tim ahli kami. Kami akan memberikan penawaran terbaik dan solusi yang sesuai dengan kebutuhan Anda.", en: "Consult your steel construction project with our expert team. We will provide the best offer and solution according to your needs." },
+            contact_response_label: { id: "Waktu Respon", en: "Response Time" },
+            contact_response_text: { id: "Kami akan menghubungi Anda dalam 24 jam", en: "We will contact you within 24 hours" },
+            contact_label_message: { id: "Detail Proyek", en: "Project Details" },
+            contact_placeholder_message: { id: "Jelaskan tentang proyek yang ingin Anda bangun...", en: "Describe the project you want to build..." },
+            contact_label_name: { id: "Nama Lengkap", en: "Full Name" },
+            contact_label_email: { id: "Email", en: "Email" },
+            contact_label_phone: { id: "Nomor Telepon", en: "Phone Number" },
+            contact_label_message: { id: "Pesan", en: "Message" },
+            contact_submit: { id: "Kirim Permintaan Konsultasi", en: "Send Consultation Request" },
+            footer_copyright: { id: "Hak Cipta © 2026 Ksatria Baja Nusantara. Seluruh hak cipta dilindungi.", en: "Copyright © 2026 Ksatria Baja Nusantara. All rights reserved." }
+        };
+
+        let currentLang = localStorage.getItem('language') || 'id';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (TEXT[key] && TEXT[key][lang]) {
+                    el.textContent = TEXT[key][lang];
+                }
+            });
+
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('bg-orange-500', 'text-white');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('bg-orange-500', 'text-white');
+                }
+            });
+        }
+
         let lastScrollPosition = 0;
         let devBarManuallyClosed = false;
         
@@ -948,6 +1081,14 @@
 
         // Initialize idle timer
         checkIdle();
+
+        // Language toggle
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
+        });
+
+        // Initial translation apply
+        setLanguage(currentLang);
     </script>
 </body>
 </html>
