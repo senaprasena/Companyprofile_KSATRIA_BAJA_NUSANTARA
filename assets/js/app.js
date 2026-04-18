@@ -87,14 +87,15 @@ window.addEventListener('scroll', function() {
     const currentScroll = window.scrollY;
     const scrollingDown = currentScroll > lastScrollPosition;
     
-    if (scrollPosition >= bodyHeight - 200 && scrollingDown && !devBarManuallyClosed) {
-        developerBar.classList.add('visible');
-        updateDevBarArrow(true);
-    } else if (scrollPosition < bodyHeight - 200) {
-        developerBar.classList.remove('visible');
-        devBarManuallyClosed = false;
-        updateDevBarArrow(false);
-    }
+        if (scrollPosition >= bodyHeight - 200 && scrollingDown && !devBarManuallyClosed) {
+            developerBar.classList.add('visible');
+            developerSide.classList.remove('visible');
+            updateDevBarArrow(true);
+        } else if (scrollPosition < bodyHeight - 200) {
+            developerBar.classList.remove('visible');
+            devBarManuallyClosed = false;
+            updateDevBarArrow(false);
+        }
     
     lastScrollPosition = currentScroll;
 });
@@ -144,7 +145,7 @@ document.getElementById('dev-bar-toggle').addEventListener('click', function(e) 
 
 // Idle side developer panel logic
 let idleTimer;
-const idleTimeout = 10000; // 10 seconds
+const idleTimeout = 5000; // 5 seconds
 const developerSide = document.getElementById('developer-side');
 let devSideManuallyClosed = false;
 

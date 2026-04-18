@@ -51,7 +51,14 @@
 
 .btn-primary:hover {
     transform: translateY(-2px);
+}
+
+.btn-primary:not(.bg-green-600):hover {
     box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.3);
+}
+
+.btn-primary.bg-green-600:hover {
+    box-shadow: 0 10px 15px -3px rgba(22, 163, 74, 0.3);
 }
 
 .timeline-line {
